@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int pivotInteger(int n) {
+        int s = (n * (n + 1))/2;
+        int p = sqrt(s);
+        return (p * p == s? p : -1);
+    }
+};
